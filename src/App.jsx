@@ -1,6 +1,8 @@
 import React from 'react';
-import Home from './pages/Home';
 import './App.css';
+import Home from './pages/Home';
+import Footer from './components/layout/Footer';
+import { ThemeProvider } from './context/ThemeContext';
 
 /**
  * Main App component
@@ -8,9 +10,14 @@ import './App.css';
  */
 function App() {
   return (
-    <div className="app">
-      <Home />
-    </div>
+    <ThemeProvider>
+      <div className="flex flex-col min-h-screen">
+        <div className="flex-grow">
+          <Home />
+        </div>
+        <Footer />
+      </div>
+    </ThemeProvider>
   );
 }
 
