@@ -1,0 +1,68 @@
+.button {
+  font-family: inherit;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+/* Variants */
+.button--primary {
+  background-color: #646cff;
+  color: white;
+}
+
+.button--primary:hover {
+  background-color: #535bf2;
+}
+
+.button--secondary {
+  background-color: #f9f9f9;
+  color: #213547;
+}
+
+.button--secondary:hover {
+  background-color: #e9e9e9;
+}
+
+.button--outlined {
+  background-color: transparent;
+  border: 1px solid #646cff;
+  color: #646cff;
+}
+
+.button--outlined:hover {
+  background-color: rgba(100, 108, 255, 0.1);
+}
+
+/* Sizes */
+.button--small {
+  padding: 0.4em 0.8em;
+  font-size: 0.85em;
+}
+
+.button--medium {
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+}
+
+.button--large {
+  padding: 0.8em 1.6em;
+  font-size: 1.15em;
+}
+
+/* Dark mode adjustments */
+@media (prefers-color-scheme: dark) {
+  .button--secondary {
+    background-color: #1a1a1a;
+    color: rgba(255, 255, 255, 0.87);
+  }
+  
+  .button--secondary:hover {
+    background-color: #2a2a2a;
+  }
+}
